@@ -1,0 +1,23 @@
+[project]
+name = "sample-project"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "coolname>=2.2.0",
+    "hydra-core>=1.3.2",
+    "loguru>=0.7.3",
+    "omegaconf>=2.3.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.2,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "pytest>=9.0.2",
+    "ruff>=0.14.9",
+]

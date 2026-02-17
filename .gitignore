@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Temporary files
+tmp/
+outputs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Cache
+.pytest_cache/
+.ruff_cache/

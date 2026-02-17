@@ -1,0 +1,16 @@
+# Main config
+
+defaults:
+  - _self_
+
+task:
+  name: main
+  description: ""
+
+run_id: ${short_id:}
+seed: 42
+
+# Hydra output settings
+hydra:
+  run:
+    dir: outputs/${task.name}/${run_id}

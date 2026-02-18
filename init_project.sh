@@ -33,7 +33,7 @@ fi
 uv init --lib --no-readme
 
 # Main dependencies (always resolved to latest)
-uv add coolname hydra-core loguru omegaconf
+uv add coolname gitpython hydra-core loguru omegaconf
 
 # Dev dependencies
 uv add --group dev ipykernel pytest ruff

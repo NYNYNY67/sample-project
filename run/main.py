@@ -2,6 +2,7 @@ import hydra
 from loguru import logger
 from omegaconf import DictConfig
 
+from sample_project.meta import save_meta
 from sample_project.resolvers import ensure_unique_output_dir, register_resolvers
 
 register_resolvers()
@@ -11,6 +12,7 @@ register_resolvers()
 def main(cfg: DictConfig) -> None:
     output_dir = ensure_unique_output_dir()
     logger.info(f"Output: {output_dir}")
+    save_meta(output_dir)
     logger.info(f"config:\n{cfg}")
 
 

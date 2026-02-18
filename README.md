@@ -1,6 +1,32 @@
 # sample-project
 
-## Setup
+A project template for Python + Hydra experiments.
+
+## Getting Started (New Project)
+
+1. Clone or copy this template and rename the directory to your project name:
+
+```bash
+mv sample-project <your-project-name>
+cd <your-project-name>
+```
+
+2. Run the initialization script:
+
+```bash
+./init_project.sh
+```
+
+This script will:
+
+- Rename `src/sample_project/` to match your project name (hyphens are converted to underscores, e.g. `my-project` -> `my_project`)
+- Update all `sample_project` references in `run/`, `src/`, `tests/`, `.claude/` (`.py`, `.md`, `.yaml` files)
+- Generate `pyproject.toml` via `uv init --lib`
+- Install dependencies (`coolname`, `gitpython`, `hydra-core`, `loguru`, `omegaconf`) and dev dependencies (`ipykernel`, `pytest`, `ruff`)
+- Remove `init_project.sh` itself (one-time use)
+- Initialize a git repository and create the first commit
+
+## Setup (Existing Project)
 
 ```bash
 uv sync

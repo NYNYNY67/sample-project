@@ -38,5 +38,14 @@ uv add coolname gitpython hydra-core loguru omegaconf
 # Dev dependencies
 uv add --group dev ipykernel pytest ruff
 
+# Remove this script (no longer needed after initialization)
+rm -- "$0"
+echo "Removed init_project.sh"
+
+# Initialize git repository and create first commit
+git init
+git add -A
+git commit -m "first commit"
+
 echo ""
 echo "Done. Run: uv run python run/main.py"

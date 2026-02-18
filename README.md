@@ -32,6 +32,16 @@ This script will:
 uv sync
 ```
 
+## Jupyter Kernel
+
+Register the uv-managed virtual environment as a Jupyter kernel:
+
+```bash
+uv run python -m ipykernel install --user --name <your-project-name>
+```
+
+The kernel will appear in VS Code and JupyterLab. Notebooks are stored in the `notebook/` directory.
+
 ## Run
 
 ```bash
@@ -69,6 +79,7 @@ uv run pytest tests/
 conf/               Hydra configs (yaml)
 run/                Entry point scripts
 src/sample_project/ Source package (auto-installed by uv sync)
+notebook/           Jupyter notebooks
 tests/              Tests
 outputs/            Hydra output directories
 ```

@@ -13,6 +13,7 @@ project/
 │   └── sample_project/
 │       ├── __init__.py
 │       └── *.py
+├── notebook/       # Jupyter notebooks
 ├── tests/          # Test code
 │   ├── __init__.py
 │   └── test_*.py

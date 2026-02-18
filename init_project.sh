@@ -42,7 +42,8 @@ uv add --group dev ipykernel pytest ruff
 rm -- "$0"
 echo "Removed init_project.sh"
 
-# Initialize git repository and create first commit
+# Remove template git history and initialize fresh repository
+rm -rf .git
 git init
 git add -A
 git commit -m "first commit"

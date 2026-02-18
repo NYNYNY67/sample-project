@@ -4,11 +4,11 @@ A project template for Python + Hydra experiments.
 
 ## Getting Started (New Project)
 
-1. Clone or copy this template and rename the directory to your project name:
+1. Clone this template with your project name:
 
 ```bash
-mv sample-project <your-project-name>
-cd <your-project-name>
+git clone https://github.com/NYNYNY67/sample-project.git your-project-name
+cd your-project-name
 ```
 
 2. Run the initialization script:
